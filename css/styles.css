@@ -1,0 +1,153 @@
+body{
+background-color: #ffe6e6;
+font-family: 'Lobster', cursive;
+}
+
+/** HEADER **/
+.nav-brand{
+  color: black;
+  padding-right: 25px;
+}
+
+h2{
+  padding-top: 10px;
+}
+.nav-item{
+  float: right;
+  font-size: "28";
+}
+#thenav {
+    
+    &:not(.top-nav-collapse) {
+    background: transparent;
+    }
+
+ .nav-item nav-link {
+    display:block;
+    color:white;
+      background-color:lightgray;
+    
+        &:hover {
+            background-color:pink;
+            color:black;
+        }
+        &.active {
+            background-color:darkred;
+        }
+    }}
+.logo-img {
+padding-top: 5px;
+padding-left: 5px;
+padding-bottom: 5px;
+padding-right: 5px;
+margin: 2px 2px 2px 2px;
+}
+
+.textbox{
+
+    height:500px;
+    font-size:14pt;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+  .container .jumbotron {
+    background: url('css/styles.css') no-repeat;
+    height: 675px;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  #logo-img {
+    background: url('css/styles.css') no-repeat;
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  /* End Header */
+
+  /* Home Page */
+ 
+  }
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+   
+ 
+ 
+  .navbar-brand img { /* Star-K */
+    height: 50px;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  
+ 
+  /* End Header */
+
+  /* Footer */
+  .panel-footer section {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .panel-footer section:nth-child(3) {
+    margin-bottom: 0; /* margin already exists on the whole row */
+  }
+  .panel-footer section hr {
+    width: 50%;
+  }
+  /* End Footer */
+
+  /* Home Page */
+
+  
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+   .navbar-brand img { /* Star-K */
+    height: 50px;
+  }
+
+  /* End Header */
+  
+  /* Home page */
+ 
+
+  .col-xxs-12 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    float: left;
+    width: 100%;
+  }
+}
+
+
+
